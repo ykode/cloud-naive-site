@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Cloud Naïve - Build Simpler Software </title>
+  <link rel="icon" href="/images/logo.svg" type="image/svg+xml">
+  <script src="https://kit.fontawesome.com/9d73dabafb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="h-20 text-white bg-black shadow-lg">
+  <div class="container flex flex-row items-center w-full mx-auto gap-x-8">
+    <div class="flex flex-row items-center gap-x-2">
+      <img src="./images/logo.svg" class="h-10" alt="cloud naïve logo">
+      <h1>Cloud Naïve</h1>
+    </div>
+    <ul class="flex flex-row pl-24 gap-x-28">
+      <li>What?</li>
+      <li>Why?</li>
+      <li>How?</li>
+    </ul>
+    <ul class="flex flex-row items-center pl-20 gap-x-10">
+      <li>
+        <i class="text-lg text-2xl fa fa-twitter" aria-hidden="true"></i>
+      </li>
+      <li>
+        <i class="text-lg text-2xl fa fa-instagram" aria-hidden="true"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  <div class="pt-10 pb-10 md:container md:mx-auto sm:mx-4"> 
+    <header class="flex flex-row items-center h-52">
+  <h1 class="font-rock-salt capitalize">Bigger impact, not bigger software</h1>
+</header>
+
+  <main>
+    <section>
+  <h1>
+    What?
+  </h1>
+  <p>
+    <strong>Cloud Naïve</strong> is tongue-in-cheek word in contrast to the term 
+    <strong class="highlight-neg">Cloud Native</strong>. 
+    Where <strong class="highlight-neg">Cloud Native</strong> talks about tools and practises building big software. We're seeking ways to use less computing 
+    resources by reducing
+    <em>footprint</em>, <em>computing</em>, and <em>storage</em> consumption. We're also advocating awareness of impact of
+    complex architecture and slow software to operation, developer productivity, computing power and
+    business' bottom line.
+  </p>
+  <h1>Why?</h1>
+  <h2>We build less efficient software</h2>
+  <p>Todays software becomes big and bloated. We've made our machine faster and consume less power.
+    Hardware becomes more efficient but the software is not. It's not common to use hardware efficiency and power
+    as an excuse for <em>developer productivity</em>. So, a little inefficiency here and there are okay because
+    hardware becomes faster. Writing hello world nowadays consumes tens or megabytes of runtime and dependencies and
+    CPU cycle thousands time more compared to software written a little more than 2 decades ago.
+  </p>
+  <h2>Modern software development encourages inefficiency</h2>
+  <p>
+    Modern software architecture doesn't help too. People are making microservices spinning multiple nodes of virtual
+    machines just because it's all the cool kids have. Even if the software can run on single node with embedded
+    database running on an SSD. <em>Microservices architecture has its own purpose</em>. Before you dive in, ask
+    yourself whether you want to deal with its complexity and cost.
+  </p>
+  <h2>Inefficient software is bad for environment</h2>
+  <p>
+    Inefficient software consumes more power compared to efficient software with the same result. That power comes
+    from power plants which increase the <em>carbon dioxide footprint</em>. If we consume less storage, less raw material
+    to manufacture the storage media.
+  </p>
+  <h1>How?</h1>
+  <h2>Create the simplest stack possible.</h2>
+  <p>
+    Being <strong>Cloud Naïve</strong> is about simplicity. <em>Most startups fail</em>, and businesses often do not scale to millions of users. 
+    So why make a complicated with so many moving parts if you can create a simple, 
+    <a href="/tta.html">three-tier architecture</a> with embedded database. There's no
+    need to build a full-fledged cluster of container orchestration system if you're just getting started.
+  </p>
+  <h2>
+    Reduce network calls and distributed state.
+  </h2>
+  <p>
+    Network calls comes with a cost. When many services communicate within a network, a lot of things need to 
+    be put in place to make the services robust, reliable, and available. 
+    <a href="https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing" target="_blank">
+      Fallacies of distributed computing
+    </a> is real thing. Network also a lot slower than plain <span class="font-mono">fopen()</span> operation.
+  </p>
+  <h2>
+    Simplify maintenance and pipeline.
+  </h2>
+  <p>
+    If you're small software engineering shop, maybe you're deploying manually, maybe you're using a simple tool such
+    as shell script. Having simpler software simplify the deployment and monitoring of the software. Instead of
+    spending your time and money for infrastructure, use them for growing your business. 
+  </p>
+  <h2>
+    Use better, more efficient tool.
+  </h2>
+  <p>
+    You don't need to pull the whole internet to build and run your software. Use better tool which allow you to cache
+    common dependencies and produce an executable artifacts which do not depend on big runtime environment. Avoid
+    programming languages, platforms, framework and tools with huge <em>footprint</em>.
+  </p>
+</section>
+ 
+  </main>
+  </div>
+    <footer class="h-20 text-white bg-gray-600">
+  <div class="container flex flex-col pt-4 text-center">
+    Copyright &copy; 2021 Didiet Noor. All Rights Reserved.
+  </div>
+</footer>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7CQ4GN1PFL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7CQ4GN1PFL');
+</script>
+</body>
+</html>

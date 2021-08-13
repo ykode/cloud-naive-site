@@ -1,0 +1,29 @@
+{
+  "name": "naive",
+  "scripts": {
+    "buildcss:dev": "tailwindcss build -i ./src/main.css -o ./public/styles.css",
+    "buildcss:prod": "cross-env NODE_ENV=production postcss build ./src/main.css -o ./public/styles.css",
+    "onchange:css": "onchange 'tailwind.config.js' './src/**/*.css' -- yarn run buildcss:dev",
+    "onchange:html": "onchange './src/**/*.html' -- yarn run buildhtml",
+    "buildhtml": "yarn run html-includes --src src --dest public",
+    "serve": "live-server public",
+    "watch": "watch 'yarn buildcss:dev' ./src",
+    "start-dev": "concurrently --kill-others \"yarn run onchange:css\" \"yarn run onchange:html\" \"yarn run serve\""
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "concurrently": "^6.2.1",
+    "cross-env": "^7.0.3",
+    "cssnano": "^5.0.7",
+    "html-includes": "^4.3.3",
+    "live-server": "^1.2.1",
+    "onchange": "^7.1.0",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.7",
+    "watch": "^1.0.2"
+  }
+}

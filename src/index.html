@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Cloud Naïve - Build Simpler Software </title>
+  <link rel="icon" href="/images/logo.svg" type="image/svg+xml">
+  <script src="https://kit.fontawesome.com/9d73dabafb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  ${require('./_nav.html')}
+  <div class="pt-10 pb-10 md:container md:mx-auto sm:mx-4"> 
+    ${require('./_header.html')}
+  <main>
+    ${require('./_content.html')} 
+  </main>
+  </div>
+    ${require('./_footer.html')}
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7CQ4GN1PFL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7CQ4GN1PFL');
+</script>
+</body>
+</html>
