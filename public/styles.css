@@ -32330,6 +32330,26 @@ main strong {
   font-weight: 700;
 }
 
+a {
+  --tw-bg-opacity: 1;
+  background-color: rgba(219, 234, 254, var(--tw-bg-opacity));
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a::after {
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  content: "\f35d";
+  padding-left: 0.25rem;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

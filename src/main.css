@@ -45,3 +45,18 @@ main strong {
 .highlight-neg {
   @apply px-2 py-1 font-bold bg-red-200;
 }
+
+a {
+  @apply px-1 py-1 bg-blue-100;
+}
+
+a:hover {
+  @apply underline;
+}
+
+a::after {
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  content: "\f35d";
+  @apply pl-1;
+}
