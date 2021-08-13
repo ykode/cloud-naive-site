@@ -12,12 +12,17 @@
   ${require('./_nav.html')}
   <div class="container px-4 pt-10 pb-10"> 
     ${require('./_header.html')}
-  <main class="px-4">
-    ${require('./_content.html')} 
+  <main class="flex flex-col px-4 lg:flex-row">
+    <div class="pb-10 lg:max-w-6xl lg:pr-10">
+    ${require('./_content.html')}
+    </div>
+    <div>
+      <a class="twitter-timeline" data-lang="en" data-height="1400" data-theme="light" href="https://twitter.com/ididit_too?ref_src=twsrc%5Etfw">Tweets by Didiet Noor</a>     
+    </div>
   </main>
   </div>
     ${require('./_footer.html')}
-
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7CQ4GN1PFL"></script>
 <script>
