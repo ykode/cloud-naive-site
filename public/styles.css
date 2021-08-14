@@ -32330,7 +32330,7 @@ main strong {
   font-weight: 700;
 }
 
-a {
+main a {
   --tw-bg-opacity: 1;
   background-color: rgba(219, 234, 254, var(--tw-bg-opacity));
   padding-left: 0.25rem;
@@ -32339,11 +32339,11 @@ a {
   padding-bottom: 0.25rem;
 }
 
-a:hover {
+main a:hover {
   text-decoration: underline;
 }
 
-a::after {
+main a::after {
   font-weight: 900;
   font-family: "Font Awesome 5 Free";
   content: "\f35d";
