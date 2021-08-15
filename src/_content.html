@@ -28,7 +28,7 @@
   </p>
   <h2>Inefficient software is bad for environment</h2>
   <p>
-    Inefficient software consumes more power compared to efficient software with the same result. That power comes
+    Inefficient software consumes more power compared to efficient software with the same result. That power came
     from power plants which increase the <em>carbon dioxide footprint</em>. If we consume less storage, less raw material
     to manufacture the storage media.
   </p>
@@ -39,6 +39,8 @@
     So why make a complicated with so many moving parts if you can create a simple, 
     <a href="/tta.html">three-tier architecture</a> with embedded database. There's no
     need to build a full-fledged cluster of container orchestration system if you're just getting started.
+    <em>Scaling starts with well built software.</em> If your software was built badly, scaling in any direction 
+    won't help.
   </p>
   <h2>
     Reduce network calls and distributed state.
@@ -49,6 +51,8 @@
     <a href="https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing" target="_blank">
       Fallacies of distributed computing
     </a> is real thing. Network also a lot slower than plain <span class="font-mono">fopen()</span> operation.
+    Not to mention the piling up complexities of <em>congestion</em>, <em>retries</em>, <em>load balancing</em>, 
+    <em>service discovery</em>, and any <em>inherent networking complexities</em> inherent to microservices.
   </p>
   <h2>
     Simplify maintenance and pipeline.
@@ -56,14 +60,16 @@
   <p>
     If you're small software engineering shop, maybe you're deploying manually, maybe you're using a simple tool such
     as shell script. Having simpler software simplify the deployment and monitoring of the software. <em>Instead of
-    spending your time and money for infrastructure, use them for growing your business</em>. 
+    spending your time and money for infrastructure, use them for growing your business</em>. It's fine to use a
+    little shell script with <a href="https://en.wikipedia.org/wiki/Rsync">Rsync</a> to deploy your software.
   </p>
   <h2>
-    Use better, more efficient tools.
+    Use better, faster, more efficient tools.
   </h2>
   <p>
-    You don't need to <em>pull the whole internet</em> to build and run your software. Use better tools that allow you to cache
-    common dependencies and produce an executable artifacts which do not depend on big runtime environment. Avoid
-    programming languages, platforms, framework and tools with huge <em>footprint</em>.
+    You don't need to <em>pull the whole internet</em> to build and run your software. Avoid programming languages,
+    platforms, or framework with huge footprints, computing, and memory consumption. <em>In general, scripting languages
+    are slower than compiled ones</em>. Amongst compiled languages, bytecode, JITed languages are slower than native binary
+    executable. Slower languages consume more computing resources. 
   </p>
 </section>
